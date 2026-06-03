@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+
+store.db
+
+data/Store 1/
+data/Store 2/
+
+*.mp4
+*.pt
