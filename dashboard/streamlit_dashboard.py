@@ -12,19 +12,19 @@ STORE_ID = "ST1008"
 st.title("🏪 Purplle Store Intelligence Platform")
 
 metrics = requests.get(
-    f"http://127.0.0.1:8000/stores/{STORE_ID}/metrics"
+    f"https://purpletechchallenge.onrender.com/stores/{STORE_ID}/metrics"
 ).json()
 
 heatmap = requests.get(
-    f"http://127.0.0.1:8000/stores/{STORE_ID}/heatmap"
+    f"https://purpletechchallenge.onrender.com/stores/{STORE_ID}/heatmap"
 ).json()
 
 funnel = requests.get(
-    f"http://127.0.0.1:8000/stores/{STORE_ID}/funnel"
+    f"https://purpletechchallenge.onrender.com/stores/{STORE_ID}/funnel"
 ).json()
 
 anomalies = requests.get(
-    f"http://127.0.0.1:8000/stores/{STORE_ID}/anomalies"
+    f"https://purpletechchallenge.onrender.com/stores/{STORE_ID}/anomalies"
 ).json()
 
 c1, c2, c3, c4, c5 = st.columns(5)
