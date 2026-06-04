@@ -6,7 +6,7 @@ from app.models import Transaction
 db = SessionLocal()
 
 df = pd.read_csv(
-    "data/pos/Brigade_Bangalore_10_April_26.csv"
+    "data/pos/POS-sample-transactions.csv"
 )
 
 for _, row in df.iterrows():

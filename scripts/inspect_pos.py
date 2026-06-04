@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("data/pos/Brigade_Bangalore_10_April_26.csv")
+df = pd.read_csv("data/pos/POS-sample-transactions.csv")
 
 print(df.head())
 print()

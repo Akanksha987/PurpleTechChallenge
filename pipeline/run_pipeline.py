@@ -14,7 +14,7 @@ from pipeline.detector import PersonDetector
 from pipeline.tracker import VisitorTracker
 from pipeline.zones import get_zone
 
-video_path = "data/videos/CAM 1.mp4"
+video_path = "data/Store 1/CAM1.mp4"
 
 cap = cv2.VideoCapture(video_path)
 
@@ -178,9 +178,9 @@ while True:
         annotated
     )
 
-    key = cv2.waitKey(30)
+    key = cv2.waitKey(1) & 0xFF
 
-    if key == 27:
+    if key == 27 or key == ord("q"):
         print("ESC Pressed")
         break
 
