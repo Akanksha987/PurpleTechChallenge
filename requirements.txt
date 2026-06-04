@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+pandas
+requests
+streamlit
+opencv-python
+ultralytics
+supervision
