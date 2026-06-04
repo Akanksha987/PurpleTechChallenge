@@ -1,6 +1,8 @@
 from typing import List
 from fastapi import FastAPI,Depends
 from sqlalchemy.orm import Session
+from app.models import Base
+from app.database import engine
 from app.schemas import EventSchema
 from app.models import Event
 from app.database import get_db
@@ -14,6 +16,7 @@ from app.models import Transaction
 from app.models import Session as VisitorSession
 
 app = FastAPI()
+Base.metadata.create_all(bind=engine)
 
 @app.get("/")
 def root():
